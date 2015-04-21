@@ -41,13 +41,13 @@ rotate([0,180,0]) {
             }
         }
         
-        translate([-10.5, -11.5, thickness - 4.4])
+        translate([-9.25, -12, thickness - 4.4])
         linear_extrude(5)
-        text("POWER", 4);
+        text("POWER", 3.5);
 
-        translate([-7, 65, thickness - 4.4])
+        translate([-6, 65.5, thickness - 4.4])
         linear_extrude(5)
-        text("HEAT", 4);
+        text("HEAT", 3.5);
     }
 
 
@@ -98,11 +98,12 @@ module lcd()
     viewableW = 43.2;
     viewableL = 57.6;
     topBorder = 3.2;
+    pad = .7;
     
     union()
     {
         //color("black") 
-        cube([screenWidth, screenLength, 5], true);
+        cube([screenWidth + pad*2, screenLength + pad*2, 5], true);
     
         //color("white")
         translate([0, (screenLength-viewableL)/2-topBorder, 2])
