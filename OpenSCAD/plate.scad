@@ -1,5 +1,5 @@
 
-$fn = 20;
+$fn = 100;
 
 width = 60.4;
 length = 162.2;
@@ -41,13 +41,13 @@ rotate([0,180,0]) {
             }
         }
         
-        translate([-8, -11, thickness - 2.1])
-        scale([1, 1, 5])
-        text("POWER", 3);
+        translate([-10.5, -11.5, thickness - 4.4])
+        linear_extrude(5)
+        text("POWER", 4);
 
-        translate([-5, 65, thickness - 2.1])
-        scale([1, 1, 5])
-        text("HEAT", 3);
+        translate([-7, 65, thickness - 4.4])
+        linear_extrude(5)
+        text("HEAT", 4);
     }
 
 
