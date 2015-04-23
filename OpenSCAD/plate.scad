@@ -30,7 +30,7 @@ rotate([0,180,0]) {
             roundedCube([width-4, length-4, thickness+1], 2);
         }
         
-        translate([0, 28.5, 1.1])
+        translate([0, 28.5, 0.9])
         lcd();
         //cube([screenWidth, screenLength, 6], center = true);
 
@@ -113,5 +113,5 @@ module lcd()
 
 module lcdViewable()
 {
-    cube([43.2, 57.6, 2], center=true);
+    cube([43.2, 57.6, 4], center=true);
 }
