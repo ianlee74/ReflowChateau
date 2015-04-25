@@ -41,13 +41,13 @@ rotate([0,180,0]) {
             }
         }
         
-        translate([-9.25, -12, thickness - 4.4])
+        translate([-10.1, -12, thickness - 4.4])
         linear_extrude(5)
-        text("POWER", 3.5);
+        text("POWER", 3.9);
 
-        translate([-6, 65.5, thickness - 4.4])
+        translate([-6.5, 65.5, thickness - 4.4])
         linear_extrude(5)
-        text("HEAT", 3.5);
+        text("HEAT", 3.9);
     }
 
 
